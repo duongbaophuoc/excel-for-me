@@ -1,0 +1,1 @@
+=callChatGPT(A1)

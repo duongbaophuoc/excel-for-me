@@ -1,0 +1,5 @@
+# Statistics
+
+=STDEV()
+=VAR()
+=CORREL()
