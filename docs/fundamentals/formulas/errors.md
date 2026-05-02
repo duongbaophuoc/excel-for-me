@@ -1,10 +1,12 @@
-# ⚠️ Errors
+# ⚠️ Errors / Lỗi thường gặp
+
+---
 
 ## 🇺🇸 English
 
 #N/A → Not found  
-#DIV/0 → Division by zero  
-#VALUE → Wrong data type  
+#DIV/0 → Divide by zero  
+#VALUE → Wrong type  
 
 Example:
 =IFERROR(A1/B1,0)
