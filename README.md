@@ -26,7 +26,16 @@ Complete knowledge base for:
 - Financial Analysts
 - Students
 - Freelancers
+  
+-----
+# Excel & Google Sheets AI Playbook 🚀
+Kho lưu trữ kiến thức tổng hợp về bảng tính, từ công thức cơ bản đến tự động hóa AI nâng cao.
 
+## 📌 Mục lục
+1. [Fundamentals](./docs/fundamentals/) - Công thức và phím tắt cơ bản.
+2. [Advanced](./docs/advanced/) - Xử lý đa sheet và tự động hóa.
+3. [Domains](./docs/domains/) - Ứng dụng trong Tài chính, Kế toán, Data Science.
+4. [AI Integration](./docs/ai-integration/) - Kết nối Gemini, ChatGPT, Claude.
 ---
 
 ## Goal
