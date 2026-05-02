@@ -1,7 +1,17 @@
-# Optimization
+# ⚡ Optimization
 
-✔ Use tables  
-✔ Avoid A:A  
-✔ Avoid volatile functions  
+## 🇺🇸 English
 
-💡 Faster workbook
+### Tips
+- Avoid full column (A:A)
+- Use tables
+- Limit volatile functions
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+### Mẹo
+- Tránh A:A
+- Dùng bảng
+- Tránh hàm volatile
