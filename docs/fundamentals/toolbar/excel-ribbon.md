@@ -1,15 +1,30 @@
-# Excel Ribbon
+# 📊 Excel Ribbon
 
-## Home
-- Format
+## 🇺🇸 English
+
+### Home
+- Format cells
 - Conditional formatting
 
-## Data
-- Sort
-- Filter
+### Data
+- Sort / Filter
 - Data validation
-- Power Query ⭐
 
-## Insert
-- Pivot table
-- Charts
+### Example
+Apply filter:
+Data → Filter → Select column
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+### Trang chủ
+- Định dạng
+- Định dạng có điều kiện
+
+### Dữ liệu
+- Sắp xếp / Lọc
+- Xác thực dữ liệu
+
+### Ví dụ
+Chọn Data → Filter
