@@ -1,15 +1,46 @@
-# Logical Functions / Hàm Logic
-- **IFS:** `=IFS(A1>90, "A", A1>80, "B", TRUE, "F")`
-  - *Dùng thay thế IF lồng nhau để code sạch hơn.*
-- **IFERROR:** `=IFERROR(Công_thức, Giá_trị_thay_thế)`
-  - *Xử lý các lỗi xấu xí như #N/A hoặc #DIV/0!.*
--------------------
-# Logical
+# 🧠 Logical Functions
 
+## 🇺🇸 English
+
+### IF
+
+#### Description
+Returns value based on condition
+
+#### Syntax
+=IF(condition, value_if_true, value_if_false)
+
+#### Example
 =IF(A1>10,"High","Low")
-=IFS(A1>90,"A",A1>80,"B")
-=AND(A1>0,B1>0)
-=OR(A1>0,B1>0)
+
+---
+
+### IFERROR
+
+#### Syntax
 =IFERROR(A1/B1,0)
 
-💡 Use for decision logic
+#### Example
+=IFERROR(10/0,0)
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+### IF
+
+#### Mô tả
+Trả về giá trị dựa trên điều kiện
+
+#### Cú pháp
+=IF(điều_kiện, đúng, sai)
+
+#### Ví dụ
+=IF(A1>10,"Cao","Thấp")
+
+---
+
+### IFERROR
+
+#### Ví dụ
+=IFERROR(A1/B1,0)
