@@ -1,12 +1,34 @@
-# Math
+# ➗ Math Functions
 
+## 🇺🇸 English
+
+### SUM
+
+#### Syntax
 =SUM(A1:A10)
-=SUMIFS(B:B,A:A,"Apple")
 
-=COUNTIF(A:A,"Apple")
+#### Example
+=SUM(1,2,3)
 
-=AVERAGE(A1:A10)
+---
 
-=ROUND(A1,2)
+### SUMIFS ⭐
 
-💡 Aggregation core
+#### Syntax
+=SUMIFS(B:B, A:A, "Apple")
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+### SUM
+
+#### Ví dụ
+=SUM(A1:A10)
+
+---
+
+### SUMIFS
+
+#### Ví dụ
+=SUMIFS(B:B, A:A, "Apple")
