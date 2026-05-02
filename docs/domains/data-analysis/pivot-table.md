@@ -13,3 +13,15 @@
 - Group
 - Filter
 - Analyze
+------------------
+# 📊 Pivot Table
+
+## 🇺🇸 English
+
+Insert → Pivot Table
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+Chèn → Pivot Table
