@@ -1,12 +1,24 @@
-# Google Sheets UI
+# 📊 Google Sheets UI
 
-## Data
-- Filter
+## 🇺🇸 English
+
+### Data Menu
+- Create filter
 - Data validation
 
-## Extensions
-- Apps Script ⭐
+### Extensions
+- Apps Script
 
-## Insert
-- Chart
-- Pivot table
+### Example
+Data → Create filter
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+### Menu Dữ liệu
+- Tạo bộ lọc
+- Xác thực dữ liệu
+
+### Tiện ích
+- Apps Script
