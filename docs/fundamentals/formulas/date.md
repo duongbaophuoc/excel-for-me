@@ -1,15 +1,20 @@
-# 📅 Date Functions
+# 📅 Date Functions / Hàm ngày tháng
+
+---
 
 ## 🇺🇸 English
 
 ### TODAY
-
 =TODAY()
 
 ---
 
-### DATEDIF
+### NOW
+=NOW()
 
+---
+
+### DATEDIF ⭐
 =DATEDIF(A1,B1,"Y")
 
 ---
@@ -17,11 +22,14 @@
 ## 🇻🇳 Tiếng Việt
 
 ### TODAY
-
 =TODAY()
 
 ---
 
-### DATEDIF
+### NOW
+=NOW()
 
+---
+
+### DATEDIF ⭐
 =DATEDIF(A1,B1,"Y")
