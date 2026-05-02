@@ -11,7 +11,7 @@
 =INDIRECT(A1 & "!B2")
 
 ---
-
+# 🔗 Tham chiếu động
 ## 🇻🇳 Tiếng Việt
 
 ### INDIRECT
