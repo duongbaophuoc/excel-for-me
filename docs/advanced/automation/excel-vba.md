@@ -1,15 +1,19 @@
-' Tác vụ: Tự động lưu Sheet hiện tại thành file PDF riêng biệt
-Sub SaveAsPDF()
-    Dim ws As Worksheet
-    Set ws = ActiveSheet
-    ws.ExportAsFixedFormat Type:=xlTypePDF, _
-        Filename:="C:\Reports\" & ws.Name & ".pdf"
-End Sub
--------------
-# Excel VBA
+# 🤖 Excel VBA
+
+## 🇺🇸 English
+
+### Example
 
 Sub Hello()
- MsgBox "Hello"
+ MsgBox "Hello Excel"
 End Sub
 
-💡 Automation in Excel
+---
+
+## 🇻🇳 Tiếng Việt
+
+### Ví dụ
+
+Sub Hello()
+ MsgBox "Xin chào Excel"
+End Sub
