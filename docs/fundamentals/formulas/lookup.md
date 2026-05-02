@@ -1,63 +1,53 @@
-# 🔍 Lookup Functions
-
-## 🇺🇸 English
-
-### XLOOKUP ⭐
-
-#### Description
-Modern lookup function replacing VLOOKUP.
-
-#### Syntax
-=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found])
-
-#### Example
-=XLOOKUP(A2, A:A, B:B, "Not Found")
-
-#### Tips
-- Can lookup left or right
-- Handles errors directly
-
-#### Common Errors
-- #N/A when not found
+# 🔍 Lookup Functions / Hàm tra cứu
 
 ---
 
-### INDEX + MATCH
+## 🇺🇸 English
 
-#### Syntax
+### 1. XLOOKUP ⭐
+=XLOOKUP(A2, A:A, B:B, "Not Found")
+
+→ Find value in column A, return from column B
+
+Use case:
+- Product lookup
+- Customer ID mapping
+
+---
+
+### 2. VLOOKUP
+=VLOOKUP(A2, A:B, 2, FALSE)
+
+⚠️ Limitation: cannot lookup left
+
+---
+
+### 3. INDEX + MATCH ⭐
 =INDEX(B:B, MATCH(A2, A:A, 0))
 
-#### Example
-=INDEX(B:B, MATCH("Apple", A:A, 0))
+→ Flexible and faster in large datasets
 
 ---
 
 ## 🇻🇳 Tiếng Việt
 
-### XLOOKUP ⭐
-
-#### Mô tả
-Hàm tra cứu hiện đại thay thế VLOOKUP.
-
-#### Cú pháp
-=XLOOKUP(giá_trị, vùng_tìm, vùng_trả_về, [không_tìm_thấy])
-
-#### Ví dụ
+### 1. XLOOKUP ⭐
 =XLOOKUP(A2, A:A, B:B, "Không tìm thấy")
 
-#### Mẹo
-- Có thể tìm trái/phải
-- Không cần IFERROR
+→ Tra cứu dữ liệu
 
-#### Lỗi thường gặp
-- #N/A khi không tìm thấy
+Ứng dụng:
+- Tìm sản phẩm
+- Mapping ID
 
 ---
 
-### INDEX + MATCH
+### 2. VLOOKUP
+=VLOOKUP(A2, A:B, 2, FALSE)
 
-#### Cú pháp
+⚠️ Không tìm trái được
+
+---
+
+### 3. INDEX + MATCH ⭐
 =INDEX(B:B, MATCH(A2, A:A, 0))
-
-#### Ví dụ
-=INDEX(B:B, MATCH("Apple", A:A, 0))
