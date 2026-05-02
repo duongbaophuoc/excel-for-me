@@ -1,12 +1,27 @@
-# Date
+# 📅 Date Functions
+
+## 🇺🇸 English
+
+### TODAY
 
 =TODAY()
-=NOW()
+
+---
+
+### DATEDIF
 
 =DATEDIF(A1,B1,"Y")
 
-=EOMONTH(A1,1)
+---
 
-=NETWORKDAYS(A1,B1)
+## 🇻🇳 Tiếng Việt
 
-💡 Time-based analysis
+### TODAY
+
+=TODAY()
+
+---
+
+### DATEDIF
+
+=DATEDIF(A1,B1,"Y")
