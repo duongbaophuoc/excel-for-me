@@ -1,9 +1,21 @@
-# Errors
+# ⚠️ Errors
 
-#N/A → not found  
-#DIV/0 → divide by zero  
-#VALUE → wrong type  
+## 🇺🇸 English
 
+#N/A → Not found  
+#DIV/0 → Division by zero  
+#VALUE → Wrong data type  
+
+Example:
 =IFERROR(A1/B1,0)
 
-💡 Always wrap risky formulas
+---
+
+## 🇻🇳 Tiếng Việt
+
+#N/A → Không tìm thấy  
+#DIV/0 → Chia cho 0  
+#VALUE → Sai kiểu dữ liệu  
+
+Ví dụ:
+=IFERROR(A1/B1,0)
