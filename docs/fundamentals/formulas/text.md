@@ -1,37 +1,37 @@
-# 🔤 Text Functions
+# 🔤 Text Functions / Hàm xử lý chuỗi
+
+---
 
 ## 🇺🇸 English
 
 ### LEFT
-
-#### Syntax
-=LEFT(text, num_chars)
-
-#### Example
 =LEFT("Excel",2) → "Ex"
 
 ---
 
+### RIGHT
+=RIGHT("Excel",2) → "el"
+
+---
+
 ### TEXTJOIN ⭐
+=TEXTJOIN(", ",TRUE,A1:A5)
 
-#### Syntax
-=TEXTJOIN(", ", TRUE, A1:A3)
-
-#### Example
-Join list into string
+→ Combine text
 
 ---
 
 ## 🇻🇳 Tiếng Việt
 
 ### LEFT
-
-#### Ví dụ
-=LEFT("Excel",2) → "Ex"
+=LEFT("Excel",2)
 
 ---
 
-### TEXTJOIN
+### RIGHT
+=RIGHT("Excel",2)
 
-#### Ví dụ
-=TEXTJOIN(", ", TRUE, A1:A3)
+---
+
+### TEXTJOIN ⭐
+=TEXTJOIN(", ",TRUE,A1:A5)
