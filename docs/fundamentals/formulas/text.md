@@ -1,13 +1,37 @@
-# Text
+# 🔤 Text Functions
 
-=LEFT(A1,3)
-=RIGHT(A1,2)
-=MID(A1,2,3)
-=LEN(A1)
+## 🇺🇸 English
 
-=TRIM(A1)
-=CLEAN(A1)
+### LEFT
 
-=TEXTJOIN(", ",TRUE,A1:A5)
+#### Syntax
+=LEFT(text, num_chars)
 
-💡 Data cleaning core
+#### Example
+=LEFT("Excel",2) → "Ex"
+
+---
+
+### TEXTJOIN ⭐
+
+#### Syntax
+=TEXTJOIN(", ", TRUE, A1:A3)
+
+#### Example
+Join list into string
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+### LEFT
+
+#### Ví dụ
+=LEFT("Excel",2) → "Ex"
+
+---
+
+### TEXTJOIN
+
+#### Ví dụ
+=TEXTJOIN(", ", TRUE, A1:A3)
