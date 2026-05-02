@@ -1,13 +1,15 @@
-# Excel Shortcuts
+# ⌨️ Excel Shortcuts
 
-Ctrl + T → Table  
+## 🇺🇸 English
+
+Ctrl + T → Create table  
 Ctrl + Shift + L → Filter  
-Alt + = → Sum  
+Alt + = → Auto sum  
 
-Ctrl + Arrow → Navigate  
-Ctrl + Shift + Arrow → Select  
+---
 
-F4 → Lock cell  
+## 🇻🇳 Tiếng Việt
 
-🔥 Pro:
-Alt + H + O + I → Auto width
+Ctrl + T → Tạo bảng  
+Ctrl + Shift + L → Lọc  
+Alt + = → Tính tổng  
