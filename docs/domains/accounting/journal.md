@@ -1,3 +1,11 @@
-# Journal
+# 📘 Journal
 
-Debit / Credit tracking
+## 🇺🇸 English
+
+Track debit/credit
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+Theo dõi Nợ/Có
