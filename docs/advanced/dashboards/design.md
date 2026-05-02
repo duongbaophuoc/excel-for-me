@@ -1,7 +1,17 @@
-# Dashboard Design
+# 📊 Dashboard Design
 
-- KPI cards  
-- Charts  
-- Filters  
+## 🇺🇸 English
 
-💡 UX matters
+### Components
+- KPI
+- Charts
+- Filters
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+### Thành phần
+- KPI
+- Biểu đồ
+- Bộ lọc
