@@ -4,8 +4,16 @@
 3. **VALUE:** Chuyển đổi văn bản dạng số về số thực để tính toán.
 4. **Remove Duplicates:** Data > Remove Duplicates.
 ----------------------
-# Cleaning
+# 🧹 Data Cleaning
 
-=TRIM()
-=CLEAN()
-=SUBSTITUTE()
+## 🇺🇸 English
+
+=TRIM(A1)
+=CLEAN(A1)
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+=TRIM(A1)
+=CLEAN(A1)
