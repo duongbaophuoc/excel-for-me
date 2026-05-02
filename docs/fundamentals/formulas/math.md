@@ -1,34 +1,35 @@
-# ➗ Math Functions
+# ➗ Math Functions / Hàm toán
+
+---
 
 ## 🇺🇸 English
 
 ### SUM
-
-#### Syntax
 =SUM(A1:A10)
-
-#### Example
-=SUM(1,2,3)
 
 ---
 
 ### SUMIFS ⭐
-
-#### Syntax
 =SUMIFS(B:B, A:A, "Apple")
+
+---
+
+### COUNTIFS
+=COUNTIFS(A:A,"Apple")
 
 ---
 
 ## 🇻🇳 Tiếng Việt
 
 ### SUM
-
-#### Ví dụ
 =SUM(A1:A10)
 
 ---
 
-### SUMIFS
-
-#### Ví dụ
+### SUMIFS ⭐
 =SUMIFS(B:B, A:A, "Apple")
+
+---
+
+### COUNTIFS
+=COUNTIFS(A:A,"Apple")
