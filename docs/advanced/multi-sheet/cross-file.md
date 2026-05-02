@@ -1,5 +1,15 @@
-# Cross File
+# 🌐 Cross File
 
-=IMPORTRANGE("url","Sheet1!A1:B10")
+## 🇺🇸 English
 
-💡 Multi-source data
+### IMPORTRANGE
+
+=IMPORTRANGE("URL","Sheet1!A1:B10")
+
+---
+
+## 🇻🇳 Tiếng Việt
+
+### IMPORTRANGE
+
+=IMPORTRANGE("URL","Sheet1!A1:B10")
