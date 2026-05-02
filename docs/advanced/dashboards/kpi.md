@@ -1,7 +1,15 @@
-# KPI
+# 📈 KPI
+
+## 🇺🇸 English
 
 Revenue  
 Growth  
 Conversion  
 
-💡 Business metrics
+---
+
+## 🇻🇳 Tiếng Việt
+
+Doanh thu  
+Tăng trưởng  
+Chuyển đổi  
