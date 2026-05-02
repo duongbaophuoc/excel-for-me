@@ -8,7 +8,7 @@
 - Limit volatile functions
 
 ---
-
+# ⚡ Tối ưu hoá
 ## 🇻🇳 Tiếng Việt
 
 ### Mẹo
