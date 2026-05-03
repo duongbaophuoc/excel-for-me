@@ -1,37 +1,57 @@
-# 🔤 Text Functions / Hàm xử lý chuỗi
+# 🔤 Text Functions (Production)
 
 ---
 
-## 🇺🇸 English
+## 📊 Data
 
-### LEFT
-=LEFT("Excel",2) → "Ex"
-
----
-
-### RIGHT
-=RIGHT("Excel",2) → "el"
+| Full Name        |
+| ---------------- |
+| John Michael Doe |
 
 ---
 
-### TEXTJOIN ⭐
-=TEXTJOIN(", ",TRUE,A1:A5)
+# 1. Extract First Name
 
-→ Combine text
+## Formula
 
----
-
-## 🇻🇳 Tiếng Việt
-
-### LEFT
-=LEFT("Excel",2)
+```excel id="txt1"
+=LEFT(A2,FIND(" ",A2)-1)
+```
 
 ---
 
-### RIGHT
-=RIGHT("Excel",2)
+## Explanation
+
+* FIND space
+* LEFT extract before space
 
 ---
 
-### TEXTJOIN ⭐
-=TEXTJOIN(", ",TRUE,A1:A5)
+## Result
+
+→ John
+
+---
+
+## Edge Cases
+
+* No space → error
+  Fix:
+
+```excel id="txt2"
+=IFERROR(LEFT(A2,FIND(" ",A2)-1),A2)
+```
+
+---
+
+# 2. Extract Last Name
+
+```excel id="txt3"
+=RIGHT(A2,LEN(A2)-FIND("@",SUBSTITUTE(A2," ","@",LEN(A2)-LEN(SUBSTITUTE(A2," ","")))))
+```
+
+---
+
+## Use Case
+
+* CRM data cleaning
