@@ -1,23 +1,27 @@
-# ⚠️ Errors / Lỗi thường gặp
+# ⚠️ Error Handling (Production)
 
 ---
 
-## 🇺🇸 English
+# 1. Handle Errors
 
-#N/A → Not found  
-#DIV/0 → Divide by zero  
-#VALUE → Wrong type  
-
-Example:
-=IFERROR(A1/B1,0)
+```excel id="e1"
+=IFERROR(A2/B2,0)
+```
 
 ---
 
-## 🇻🇳 Tiếng Việt
+## Explanation
 
-#N/A → Không tìm thấy  
-#DIV/0 → Chia cho 0  
-#VALUE → Sai kiểu dữ liệu  
+Prevent crash
 
-Ví dụ:
-=IFERROR(A1/B1,0)
+---
+
+## Edge Cases
+
+* Hides real error → be careful
+
+---
+
+## Use Case
+
+* Dashboard stability
