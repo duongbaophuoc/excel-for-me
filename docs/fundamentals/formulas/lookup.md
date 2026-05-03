@@ -1,53 +1,133 @@
-# 🔍 Lookup Functions / Hàm tra cứu
+# 🔍 Lookup Functions (Production) / Hàm tra cứu 
 
 ---
 
-## 🇺🇸 English
+## 📊 Sample Dataset / Dữ liệu mẫu
 
-### 1. XLOOKUP ⭐
-=XLOOKUP(A2, A:A, B:B, "Not Found")
-
-→ Find value in column A, return from column B
-
-Use case:
-- Product lookup
-- Customer ID mapping
+| ID  | Product | Price |
+| --- | ------- | ----- |
+| P01 | Apple   | 10    |
+| P02 | Banana  | 20    |
+| P03 | Orange  | 30    |
 
 ---
 
-### 2. VLOOKUP
-=VLOOKUP(A2, A:B, 2, FALSE)
-
-⚠️ Limitation: cannot lookup left
+# 1. Basic Lookup (XLOOKUP)
 
 ---
 
-### 3. INDEX + MATCH ⭐
-=INDEX(B:B, MATCH(A2, A:A, 0))
+## 🇺🇸 Problem
 
-→ Flexible and faster in large datasets
+Find product name using ID
 
----
+## 🇻🇳 Bài toán
 
-## 🇻🇳 Tiếng Việt
-
-### 1. XLOOKUP ⭐
-=XLOOKUP(A2, A:A, B:B, "Không tìm thấy")
-
-→ Tra cứu dữ liệu
-
-Ứng dụng:
-- Tìm sản phẩm
-- Mapping ID
+Tìm tên sản phẩm từ mã
 
 ---
 
-### 2. VLOOKUP
-=VLOOKUP(A2, A:B, 2, FALSE)
+## 📥 Input
 
-⚠️ Không tìm trái được
+Lookup value: `"P02"`
 
 ---
 
-### 3. INDEX + MATCH ⭐
-=INDEX(B:B, MATCH(A2, A:A, 0))
+## 💡 Formula
+
+```excel id="l7t3m0"
+=XLOOKUP("P02", A2:A4, B2:B4)
+```
+
+---
+
+## 🔍 Step-by-step Explanation
+
+🇺🇸
+
+* A2:A4 → lookup array
+* B2:B4 → return array
+* "P02" → value to find
+
+🇻🇳
+
+* A2:A4 → cột tìm kiếm
+* B2:B4 → cột trả về
+* "P02" → giá trị cần tìm
+
+---
+
+## ✅ Result
+
+→ Banana
+
+---
+
+## ⚠️ Edge Cases
+
+* If not found → #N/A
+* Fix:
+
+```excel id="nm0x48"
+=XLOOKUP("P05", A2:A4, B2:B4, "Not Found")
+```
+
+---
+
+## 🎯 Use Case
+
+* Product lookup
+* Mapping IDs
+* Dashboard filters
+
+---
+
+# 2. VLOOKUP (Legacy)
+
+---
+
+## Problem
+
+Same task using older Excel
+
+---
+
+## Formula
+
+```excel id="41q8nm"
+=VLOOKUP("P02", A2:C4, 2, FALSE)
+```
+
+---
+
+## ⚠️ Limitation
+
+* Cannot lookup left
+* Slower than XLOOKUP
+
+---
+
+# 3. INDEX + MATCH (Flexible)
+
+---
+
+## Formula
+
+```excel id="v3p1ys"
+=INDEX(B2:B4, MATCH("P02", A2:A4, 0))
+```
+
+---
+
+## Why use this?
+
+🇺🇸
+More flexible than VLOOKUP
+
+🇻🇳
+Linh hoạt hơn VLOOKUP
+
+---
+
+## Edge Case
+
+MATCH returns #N/A → wrap IFERROR
