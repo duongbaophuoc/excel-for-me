@@ -1,39 +1,78 @@
-# 🧠 Logical Functions / Hàm logic
+# 🧠 Logical Functions (Production)
 
 ---
 
-## 🇺🇸 English
+## 📊 Data
 
-### IF
-=IF(A1>10,"High","Low")
-
-→ Decision making
-
----
-
-### IFS
-=IFS(A1>90,"A",A1>80,"B")
+| Score |
+| ----- |
+| 95    |
+| 70    |
 
 ---
 
-### IFERROR ⭐
-=IFERROR(A1/B1,0)
+# 1. IF Classification
 
-→ Prevent errors
+## 🇺🇸 Problem
 
----
+Classify pass/fail
 
-## 🇻🇳 Tiếng Việt
+## 🇻🇳
 
-### IF
-=IF(A1>10,"Cao","Thấp")
+Phân loại đậu/rớt
 
 ---
 
-### IFS
-=IFS(A1>90,"A",A1>80,"B")
+## Input
+
+A2 = 95
 
 ---
 
-### IFERROR ⭐
-=IFERROR(A1/B1,0)
+## Formula
+
+```excel id="if1"
+=IF(A2>=80,"Pass","Fail")
+```
+
+---
+
+## Explanation
+
+* Check condition A2>=80
+* TRUE → Pass
+* FALSE → Fail
+
+---
+
+## Result
+
+95 → Pass
+
+---
+
+## Edge Cases
+
+* Blank cell → returns FALSE branch
+* Use:
+
+```excel id="if2"
+=IF(A2="","",IF(A2>=80,"Pass","Fail"))
+```
+
+---
+
+## Use Case
+
+* Grading system
+* Risk classification
+
+---
+
+# 2. IFERROR
+
+```excel id="if3"
+=IFERROR(A2/B2,0)
+```
+
+→ Avoid crash when divide by zero
