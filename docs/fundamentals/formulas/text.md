@@ -1,57 +1,106 @@
-# 🔤 Text Functions (Production)
+# 🔤 Text Functions (Production) / Hàm xử lý chuỗi
 
 ---
 
-## 📊 Data
+## 📊 Sample Data / Dữ liệu mẫu
 
-| Full Name        |
+| A (Full Name)    |
 | ---------------- |
 | John Michael Doe |
+| Anna             |
 
 ---
 
-# 1. Extract First Name
+# 1. Extract First Name / Tách tên
 
-## Formula
+## 🇺🇸 Problem
 
-```excel id="txt1"
+Extract first name from full name
+
+## 🇻🇳 Bài toán
+
+Tách tên từ họ tên đầy đủ
+
+---
+
+## 📥 Input
+
+A2 = "John Michael Doe"
+
+---
+
+## 💡 Formula
+
+```excel id="t1"
 =LEFT(A2,FIND(" ",A2)-1)
 ```
 
 ---
 
-## Explanation
+## 🔍 Explanation
 
-* FIND space
-* LEFT extract before space
+🇺🇸
+
+* FIND(" ",A2) → first space position
+* LEFT → extract text before space
+
+🇻🇳
+
+* FIND tìm vị trí dấu cách đầu tiên
+* LEFT lấy phần bên trái
 
 ---
 
-## Result
+## ✅ Result
 
 → John
 
 ---
 
-## Edge Cases
+## ⚠️ Edge Cases
 
-* No space → error
-  Fix:
+❗ If only one word (Anna) → error
 
-```excel id="txt2"
+Fix:
+
+```excel id="t2"
 =IFERROR(LEFT(A2,FIND(" ",A2)-1),A2)
 ```
 
 ---
 
-# 2. Extract Last Name
+## 🎯 Use Case
 
-```excel id="txt3"
+* CRM cleaning
+* User data parsing
+
+---
+
+# 2. Extract Last Name / Tách họ
+
+## 💡 Formula
+
+```excel id="t3"
 =RIGHT(A2,LEN(A2)-FIND("@",SUBSTITUTE(A2," ","@",LEN(A2)-LEN(SUBSTITUTE(A2," ","")))))
 ```
 
 ---
 
-## Use Case
+## 🔍 Explanation
 
-* CRM data cleaning
+🇺🇸
+
+* Replace last space with @
+* FIND position
+* Extract right side
+
+🇻🇳
+
+* Thay khoảng trắng cuối bằng @
+* Tìm vị trí → cắt bên phải
+
+---
+
+## ✅ Result
+
+→ Doe
