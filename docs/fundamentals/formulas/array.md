@@ -1,35 +1,37 @@
-# 🔁 Array Functions / Hàm mảng
+# 📅 Date Functions (Production)
 
 ---
 
-## 🇺🇸 English
+## 📊 Data
 
-### FILTER ⭐
-=FILTER(A:B, B:B>10)
-
----
-
-### UNIQUE
-=UNIQUE(A:A)
+A2 = 01/01/2024
 
 ---
 
-### SORT
-=SORT(A:A)
+# 1. Add Months
+
+```excel id="d1"
+=EDATE(A2,3)
+```
+
+→ 01/04/2024
 
 ---
 
-## 🇻🇳 Tiếng Việt
+# 2. Age Calculation
 
-### FILTER ⭐
-=FILTER(A:B, B:B>10)
-
----
-
-### UNIQUE
-=UNIQUE(A:A)
+```excel id="d2"
+=DATEDIF(A2,TODAY(),"Y")
+```
 
 ---
 
-### SORT
-=SORT(A:A)
+## Edge Cases
+
+* Invalid date → error
+
+---
+
+## Use Case
+
+* HR system
