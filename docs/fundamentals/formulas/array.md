@@ -1,37 +1,39 @@
-# 📅 Date Functions (Production)
+# 🔁 Array Functions (Production)
 
 ---
 
-## 📊 Data
+## Data
 
-A2 = 01/01/2024
-
----
-
-# 1. Add Months
-
-```excel id="d1"
-=EDATE(A2,3)
-```
-
-→ 01/04/2024
+| A      |
+| ------ |
+| Apple  |
+| Apple  |
+| Banana |
 
 ---
 
-# 2. Age Calculation
+# 1. UNIQUE
 
-```excel id="d2"
-=DATEDIF(A2,TODAY(),"Y")
+```excel id="a1"
+=UNIQUE(A2:A4)
 ```
 
 ---
 
-## Edge Cases
+## Result
 
-* Invalid date → error
+Apple, Banana
+
+---
+
+# 2. FILTER
+
+```excel id="a2"
+=FILTER(A2:A4,A2:A4="Apple")
+```
 
 ---
 
 ## Use Case
 
-* HR system
+* Dynamic report
