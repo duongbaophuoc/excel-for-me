@@ -1,35 +1,37 @@
-# 📅 Date Functions / Hàm ngày tháng
+# 📅 Date Functions (Production)
 
 ---
 
-## 🇺🇸 English
+## 📊 Data
 
-### TODAY
-=TODAY()
-
----
-
-### NOW
-=NOW()
+A2 = 01/01/2024
 
 ---
 
-### DATEDIF ⭐
-=DATEDIF(A1,B1,"Y")
+# 1. Add Months
+
+```excel id="d1"
+=EDATE(A2,3)
+```
+
+→ 01/04/2024
 
 ---
 
-## 🇻🇳 Tiếng Việt
+# 2. Age Calculation
 
-### TODAY
-=TODAY()
-
----
-
-### NOW
-=NOW()
+```excel id="d2"
+=DATEDIF(A2,TODAY(),"Y")
+```
 
 ---
 
-### DATEDIF ⭐
-=DATEDIF(A1,B1,"Y")
+## Edge Cases
+
+* Invalid date → error
+
+---
+
+## Use Case
+
+* HR system
