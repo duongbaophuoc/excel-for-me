@@ -1,35 +1,46 @@
-# ➗ Math Functions / Hàm toán
+# ➗ Math Functions (Production)
 
 ---
 
-## 🇺🇸 English
+## 📊 Data
 
-### SUM
-=SUM(A1:A10)
-
----
-
-### SUMIFS ⭐
-=SUMIFS(B:B, A:A, "Apple")
+| Product | Sales |
+| ------- | ----- |
+| A       | 100   |
+| A       | 200   |
 
 ---
 
-### COUNTIFS
-=COUNTIFS(A:A,"Apple")
+# 1. SUMIFS
+
+## Formula
+
+```excel id="m1"
+=SUMIFS(B2:B3,A2:A3,"A")
+```
 
 ---
 
-## 🇻🇳 Tiếng Việt
+## Result
 
-### SUM
-=SUM(A1:A10)
-
----
-
-### SUMIFS ⭐
-=SUMIFS(B:B, A:A, "Apple")
+→ 300
 
 ---
 
-### COUNTIFS
-=COUNTIFS(A:A,"Apple")
+## Edge Cases
+
+* No match → 0
+
+---
+
+# 2. Sum Top N
+
+```excel id="m2"
+=SUM(LARGE(B2:B10,{1,2,3}))
+```
+
+---
+
+## Use Case
+
+* Top performers
